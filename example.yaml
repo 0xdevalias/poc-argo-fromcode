@@ -1,0 +1,12 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: poc-argo-fromcode-
+spec:
+  entrypoint: helloWorld
+  templates:
+  - name: helloWorld
+    container:
+      image: alpine:latest
+      command: ["echo"]
+      args: ["poc-argo-fromcode world!"]

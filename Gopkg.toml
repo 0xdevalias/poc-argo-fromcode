@@ -1,0 +1,3 @@
+[[constraint]]
+  name = "github.com/argoproj/argo"
+  version = "2.0.0-beta1"
